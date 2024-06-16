@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorite Music</title>
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #f9f9f9;
+            background-color: #000; /* Черный фон */
+            color: #fff; /* Белый текст для лучшей читаемости */
         }
         header {
-            background-color: #333;
+            background-color: #333; /* Темно-серый фон для заголовка */
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -23,7 +24,7 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #fff; /* Белые ссылки */
         }
         section {
             margin-bottom: 40px;
@@ -37,8 +38,14 @@
         .music-description {
             text-align: center;
         }
+        .mp3-link:link, .mp3-link:visited {
+            color: #FFFF00; /* Ярко-желтый цвет для ссылок на mp3 файлы */
+        }
+        .mp3-link:hover, .mp3-link:active {
+            color: #FFA500; /* Ярко-оранжевый цвет при наведении и активации */
+        }
         footer {
-            background-color: #333;
+            background-color: #333; /* Темно-серый фон для подвала */
             color: #fff;
             text-align: center;
             padding: 10px;
