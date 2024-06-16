@@ -33,20 +33,23 @@
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
         }
         .music-description {
             text-align: center;
+        }
+        .music-item {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 200px; /* Уменьшили пространство между картиной и аудиоплеером */
+            margin-bottom: 20px;
         }
         .mp3-link {
             color: #FFFF00; /* Ярко-желтый цвет для ссылок на mp3 файлы */
         }
         .mp3-link:hover, .mp3-link:active {
             color: #FFA500; /* Ярко-оранжевый цвет при наведении и активации */
-        }
-        audio {
-            display: block;
-            margin: 10px auto;
         }
         footer {
             background-color: #333; /* Темно-серый фон для подвала */
@@ -77,71 +80,81 @@
     <section id="music">
         <div class="music-description">
             <h3>Vocalise, Op. 34, No. 14 Рахманинова</h3>
-            <img src="img_3.png" alt="Vocalise, Op. 34, No. 14 Рахманинова">
+            <div class="music-item">
+                <img src="img_3.png" alt="Vocalise, Op. 34, No. 14 Рахманинова">
+                <audio controls>
+                    <source src="olga-scheps-vocalise-op-34-no-14.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
             <p>"Вокализ, ор. 34, № 14" Сергея Рахманинова был написан в 1912 году.
                 Это заключительное произведение песенного цикла "Четырнадцать песен, ор. 34".
                 В отличие от других песен цикла, "Вокализ" не имеет текста и исполняется с
                 использованием одной гласной по выбору певца, что делает его уникальным
                 среди вокальных произведений.</p>
-            <audio controls>
-                <source src="olga-scheps-vocalise-op-34-no-14.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
             <hr>
         </div>
         <div class="music-description">
             <h3>20 прелюдия Шопена</h3>
-            <img src="img_1.png" alt="20 прелюдия Шопена">
+            <div class="music-item">
+                <img src="img_1.png" alt="20 прелюдия Шопена">
+                <audio controls>
+                    <source src="Шопен - Прелюдия №20.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
             <p>Прелюдия № 20 до минор, ор. 28 Фредерика Шопена была написана в 1838-1839 годах.
                 Она входит в комплект из 24 прелюдий соч. 28, которые Шопен написал во время пребывания на
                 Майорке (Испания). Полный комплект прелюдий
-                был опубликован в 1839 году.</p>
-            <audio controls>
-                <source src="Шопен - Прелюдия №20.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+                был опубликован в 1839 году.В прелюдии звучат эмоции от событий, которые запечатлены и в его "Революционном этюде"</p>
             <hr>
         </div>
         <div class="music-description">
             <h3>The 4 Seasons: Violin Concerto in G minor, Op. 8, No. 2, RV 315, 'L'estate' (Summer) (Antonio Vivaldi)</h3>
-            <img src="img_4.png" alt="Violin Concerto in G minor, Op. 8, No. 2, RV 315, 'L'estate' (Summer)">
+            <div class="music-item">
+                <img src="img_4.png" alt="Violin Concerto in G minor, Op. 8, No. 2, RV 315, 'L'estate' (Summer)">
+                <audio controls>
+                    <source src="antonio-vivaldi-concerto-no-2-in-g-minor-op-8-rv-315-lestate-iii-prest.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
             <p>Концерт для скрипки с оркестром соль минор, соч. 8, № 2, RV 315, "L'estate" ("Лето") Антонио Вивальди "Времена года"
                 был написан в 1723 году. Все концерты были опубликованы в 1725 году в составе большого сборника
                 под названием "Il cimento dell'armonia e dell'inventione"
                 ("Состязание между гармонией и изобретениями").</p>
-            <audio controls>
-                <source src="antonio-vivaldi-concerto-no-2-in-g-minor-op-8-rv-315-lestate-iii-prest.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
             <hr>
         </div>
         <div class="music-description">
             <h3>2 прелюдия Рахманинова</h3>
-            <img src="img_5.png" alt="2 прелюдия Рахманинова">
+            <div class="music-item">
+                <img src="img_5.png" alt="2 прелюдия Рахманинова">
+                <audio controls>
+                    <source src="сергеи-рахманинов-прелюдия-2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
             <p>При создании картины использованы эмоции из стихотворения Александра Блока "Девушка пела в церковном хоре",
                 а также сильные чувства из 2-й прелюдии Рахманинова. Сцена сочетает в себе мистическую и меланхоличную духовность
                 с существующим драматическим фоном. Мягкое свечение церковных окон на фоне угасающего дневного света
                 создает ощущение святыни, а темные тона уравновешиваются оттенками фиолетового и золотого, передавая смесь отчаяния и
                 духовной надежды.</p>
-            <audio controls>
-                <source src="сергеи-рахманинов-прелюдия-2.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
             <hr>
         </div>
         <div class="music-description">
             <h3>Piano Sonata No. 14 in C-Sharp Minor, Op. 27 No. 2 "Moonlight" (Ludwig van Beethoven)</h3>
-            <img src="img_2.png" alt="Adagio sostenuto">
+            <div class="music-item">
+                <img src="img_2.png" alt="Adagio sostenuto">
+                <audio controls>
+                    <source src="ludwig-van-beethoven-beethoven-piano-sonata-no-14-in-c-sharp-minor-op-.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
             <p>Соната для фортепиано № 14 до-диез минор, соч. 27 № 2, широко известная как "Лунная соната",
                 была написана Людвигом ван Бетховеном в 1801 году.
                 Она была опубликована в 1802 году и посвящена ученице Бетховена,
                 графине Джульетте Гиччарди. Прозвище "Лунная соната" было дано ей немецким музыкальным
                 критиком и поэтом Людвигом Рельштабом в 1832 году, который сравнил первую часть с лунным светом, освещающим
                 Люцернское озеро.</p>
-            <audio controls>
-                <source src="ludwig-van-beethoven-beethoven-piano-sonata-no-14-in-c-sharp-minor-op-.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
             <hr>
         </div>
     </section>
@@ -151,5 +164,8 @@
         <p>Формат mp3 использован для примера и не для распространения. Он не позволяет раскрыть всю красоту этой музыки.
            Отзывы по электронной почте: <a href="mailto:info@myfavoritemusic.com">info@myfavoritemusic.com</a>.</p>
     </section>
+    <footer>
+        <p>&copy; 2024 Моя любимая музыка. Все права защищены.</p>
+    </footer>
 </body>
 </html>
