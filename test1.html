@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя любимая музыка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #000; /* Черный фон */
+            color: #fff; /* Белый текст для лучшей читаемости */
+        }
+        header {
+            background-color: #333; /* Темно-серый фон для заголовка */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff; /* Белые ссылки */
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .music-description {
+            text-align: center;
+        }
+        .music-item {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 200px; /* Увеличили пространство между картиной и аудиоплеером */
+            margin-bottom: 20px;
+        }
+        .mp3-link {
+            color: #FFFF00; /* Ярко-желтый цвет для ссылок на mp3 файлы */
+        }
+        .mp3-link:hover, .mp3-link:active {
+            color: #FFA500; /* Ярко-оранжевый цвет при наведении и активации */
+        }
+        footer {
+            background-color: #333; /* Темно-серый фон для подвала */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Моя любимая музыка</h1>
+    </header>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#music">Музыка</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    <hr>
+    <section id="home">
+        <h2>Добро пожаловать в мою музыкальную коллекцию</h2>
+        <p>В этот сборник вошли некоторые из моих самых любимых произведений разных композиторов.</p>
+    </section>
+    <hr>
+    <section id="music">
+        <div class="music-description">
+            <h3>Vocalise, Op. 34, No. 14 Рахманинова</h3>
+            <div class="music-item">
+                <img src="img_3.png" alt="Vocalise, Op. 34, No. 14 Рахманинова">
+                <audio controls>
+                    <source src="olga-scheps-vocalise-op-34-no-14.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p>"Вокализ, ор. 34, № 14" Сергея Рахманинова был написан в 1912 году.
+                Это заключительное произведение песенного цикла "Четырнадцать песен, ор. 34".
+                В отличие от других песен цикла, "Вокализ" не имеет текста и исполняется с
+                использованием одной гласной по выбору певца, что делает его уникальным
+                среди вокальных произведений.</p>
+            <hr>
+        </div>
+        <div class="music-description">
+            <h3>20 прелюдия Шопена</h3>
+            <div class="music-item">
+                <img src="img_1.png" alt="20 прелюдия Шопена">
+                <audio controls>
+                    <source src="Шопен - Прелюдия №20.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p>Прелюдия № 20 до минор, ор. 28 Фредерика Шопена была написана в 1838-1839 годах.
+                Она входит в комплект из 24 прелюдий соч. 28, которые Шопен написал во время пребывания на
+                Майорке (Испания). Полный комплект прелюдий
+                был опубликован в 1839 году. В прелюдии звучат эмоции от событий, которые запечатлены и в его "Революционном этюде".</p>
+            <hr>
+        </div>
+        <div class="music-description">
+            <h3>The 4 Seasons: Violin Concerto in G minor, Op. 8, No. 2, RV 315, 'L'estate' (Summer) (Antonio Vivaldi)</h3>
+            <div class="music-item">
+                <img src="img_4.png" alt="Violin Concerto in G minor, Op. 8, No. 2, RV 315, 'L'estate' (Summer)">
+                <audio controls>
+                    <source src="antonio-vivaldi-concerto-no-2-in-g-minor-op-8-rv-315-lestate-iii-prest.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p>Концерт для скрипки с оркестром соль минор, соч. 8, № 2, RV 315, "L'estate" ("Лето") Антонио Вивальди "Времена года"
+                был написан в 1723 году. Все концерты были опубликованы в 1725 году в составе большого сборника
+                под названием "Il cimento dell'armonia e dell'inventione"
+                ("Состязание между гармонией и изобретениями").</p>
+            <hr>
+        </div>
+        <div class="music-description">
+            <h3>2 прелюдия Рахманинова</h3>
+            <div class="music-item">
+                <img src="img_5.png" alt="2 прелюдия Рахманинова">
+                <audio controls>
+                    <source src="сергеи-рахманинов-прелюдия-2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p>При создании картины использованы эмоции из стихотворения Александра Блока "Девушка пела в церковном хоре",
+                а также сильные чувства из 2-й прелюдии Рахманинова. Сцена сочетает в себе мистическую и меланхоличную духовность
+                с существующим драматическим фоном. Мягкое свечение церковных окон на фоне угасающего дневного света
+                создает ощущение святыни, а темные тона уравновешиваются оттенками фиолетового и золотого, передавая смесь отчаяния и
+                духовной надежды.</p>
+            <hr>
+        </div>
+         <div class="music-description">
+            <h3>4 прелюдия Шопена</h3>
+            <div class="music-item">
+                <img src="img_6.png" alt="4 прелюдия Шопена">
+                <audio controls>
+                    <source src="Игорь Урьяш (фортепиано) - Ф. Шопен - Прелюдия № 4 ми минор, op. 28 № 4 (запись 2003 г.).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p>Четвёртая прелюдия является одной из наиболее известных и часто исполняемых прелюдий Шопена.
+                Её меланхоличное настроение и гармоническая глубина делают её любимой среди пианистов и слушателей.
+                Многие композиторы и музыканты были вдохновлены этим произведением.
+                Эта прелюдия часто используется в различных художественных произведениях и кинофильмах благодаря
+                своей эмоциональной силе и выразительности.</p>
+            <hr>
+        </div>
+        <div class="music-description">
+            <h3>К.В.Глюк, Танец блаженных духов из оп. «Орфей и Эвридика»</h3>
+            <div class="music-item">
+                <img src="img_7.png" alt="К.В.Глюк, Танец блаженных духов из оп. «Орфей и Эвридика»">
+                <audio controls>
+                    <source src="Nelson Freire - Gluck_ Orfeo ed Euridice, Wq. 30 - Melodie (Arr. Sgambati).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p>«Орфей и Эвридика» (Орфей и Эвридика) — это опера в трех действиях,
+                написанная Кристофом Виллибальдом фон Глюком. Впервые она была исполнена в Венеции 5 октября 1762 года.
+                Это одна из самых известных и влиятельных опер, появившаяся в оперном репертуаре,
+                и она сыграла важную роль в реформировании оперы в XVIII веке.</p>
+            <hr>
+        </div>
+        <div class="music-description">
+            <h3>Piano Sonata No. 14 in C-Sharp Minor, Op. 27 No. 2 "Moonlight" (Ludwig van Beethoven)</h3>
+            <div class="music-item">
+                <img src="img_2.png" alt="Adagio sostenuto">
+                <audio controls>
+                    <source src="Ludwig van Beethoven, Daniel Barenboim - Piano Sonata No. 14 in C-Sharp Minor, Op. 27 No. 2 _Moonlight__ I. Adagio sostenuto.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p>Соната для фортепиано № 14 до-диез минор, соч. 27 № 2, широко известная как "Лунная соната",
+                была написана Людвигом ван Бетховеном в 1801 году.
+                Она была опубликована в 1802 году и посвящена ученице Бетховена,
+                графине Джульетте Гиччарди. Прозвище "Лунная соната" было дано ей немецким музыкальным
+                критиком и поэтом Людвигом Рельштабом в 1832 году, который сравнил первую часть с лунным светом, освещающим
+                Люцернское озеро.</p>
+            <hr>
+        </div>
+    </section>
+    <hr>
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Формат mp3 использован для примера и не для распространения. Он не позволяет раскрыть всю красоту этой музыки.
+           Отзывы по электронной почте: <a href="mailto:info@myfavoritemusic.com">info@myfavoritemusic.com</a>.</p>
+    </section>
+</body>
+</html>
